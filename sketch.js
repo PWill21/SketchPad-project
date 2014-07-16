@@ -6,6 +6,7 @@ $(document).ready(function() {
 function createGrid(gridWidth, gridHeight) {
 	// create divs; total number of divs is gridWidth * gridHeight
 	for(i = 1; i <= (gridWidth * gridHeight); i++) {
-		
+		// select container id and add divs to it
+		$("#container").append("div class="box"></div>");
 	}
 }
