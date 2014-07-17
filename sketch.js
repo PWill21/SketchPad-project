@@ -7,6 +7,6 @@ function createGrid(gridWidth, gridHeight) {
 	// create divs; total number of divs is gridWidth * gridHeight
 	for(var i = 1; i <= (gridWidth * gridHeight); i++) {
 		// select body element and add divs to it
-		$("body").append("<div class='box'></div>");
+		$("#container").append("<div class='box'></div>");
 	}
 }
