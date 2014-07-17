@@ -50,6 +50,8 @@ table {
 
 /**********************************************/
 body {
+	margin: 0 auto;
+	width: 850px;
 	line-height: 0;
 }
 .box {
