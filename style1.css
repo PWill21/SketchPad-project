@@ -54,6 +54,10 @@ body {
 	width: 850px;
 	line-height: 0;
 }
+#clear_button {
+	margin: 5px auto;
+	display: block;
+}
 .box {
 	display: inline-block;
 	height: 50px;
