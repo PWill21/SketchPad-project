@@ -2,6 +2,7 @@ $(document).ready(function() {
 	// when document loads, call createGrid() function that takes a default parameter of size 16x16
 	createGrid(16, 16);
 	changeColor();
+	clearGrid();
 });
 
 /************************************************************************************************
@@ -20,4 +21,8 @@ function changeColor() {
 	});
 }
 
-
+function clearGrid() {
+	$("#clear_button").click(function() {
+		alert("are you sure you want to clear?");
+	});
+}
