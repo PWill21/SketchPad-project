@@ -49,3 +49,13 @@ table {
 
 
 /**********************************************/
+body {
+	line-height: 0;
+}
+.box {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border: 1px solid black;
+	margin: 0;
+}
