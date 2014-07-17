@@ -23,6 +23,6 @@ function changeColor() {
 
 function clearGrid() {
 	$("#clear_button").click(function() {
-		alert("are you sure you want to clear?");
+		var newSize = prompt("What size for new grid?");
 	});
 }
