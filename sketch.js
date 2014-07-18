@@ -23,6 +23,10 @@ function changeColor() {
 
 function clearGrid() {
 	$("#clear_button").click(function() {
-		var newSize = prompt("What size for new grid?");
+		newGridWidth = prompt("What size for new grid?"); // asks for width of new grid. will also be height
+		$(".box").css("background-color", "#FFF"); // clears grid of all color, simulates reset
+		var newCSSWidth = Math.floor(850/newGridWidth); // determines new width size for .box <div>s
+		$(".box").css("width", "newCSSWidth");
+		createGrid(newGridWidth, newGridWidth);
 	});
 }
