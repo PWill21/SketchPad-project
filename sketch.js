@@ -3,6 +3,7 @@ $(document).ready(function() {
 	createGrid(16, 16);
 	changeColor();
 	removeGrid();
+	makeNewGrid();
 });
 
 /************************************************************************************************
@@ -23,8 +24,17 @@ function changeColor() {
 
 function removeGrid() {
 	$("#clear_button").click(function () {
-		$("#container").remove();
+		$(".box").remove();
 	});
-	createGrid(16,16);
+}
+
+function makeNewGrid() {
+ 	$("#make_new").click(function() {
+
+ 		var newSize = prompt("What is the new size?");
+ 		for(var i =1; i <= (newSize * newSize); i++) {
+ 			$("#container").append("<div class='box'></div>");
+ 		}
+ 	});
 }
 
