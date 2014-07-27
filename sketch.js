@@ -9,9 +9,9 @@ $(document).ready(function() {
 /************************************************************************************************
 											Functions
 ************************************************************************************************/
-function createGrid(gridWidth, gridHeight) {
-	// create divs; total number of divs is gridWidth * gridHeight
-	for(var i = 1; i <= (gridWidth * gridHeight); i++) {
+function createGrid(grid_width, grid_height) {
+	// create divs; total number of divs is grid_width * grid_height
+	for(var i = 1; i <= (grid_width * grid_height); i++) {
 		// select body element and add divs to it
 		$("#container").append("<div class='box'></div>");
 	}
@@ -30,14 +30,14 @@ function removeGrid() {
 
 function makeNewGrid() {
  	$("#make_new").click(function() {
- 		var newSize = prompt("What is the new size?");
- 		for(var i =1; i <= (newSize * newSize); i++) {
+ 		var new_size = prompt("What is the new size?");
+ 		for(var i =1; i <= (new_size * new_size); i++) {
  			$("#container").append("<div class='box'></div>");
  		}
- 		var newBoxWidth = Math.floor((850/newSize) - 2); /*calculates the size of each box based on width of <body> (850px). -2 accounts for size of border around each .box (1px). */
- 		var newBoxHeight = newBoxWidth;
- 		$(".box").css("width", newBoxWidth);
- 		$(".box").css("height", newBoxHeight); /* assures that each new .box is in fact a perfect square */
+ 		var new_box_width = Math.floor((850/new_size) - 2); /*calculates the size of each box based on width of <body> (850px). -2 accounts for size of border around each .box (1px). */
+ 		var new_box_height = new_box_width;
+ 		$(".box").css("width", new_box_width);
+ 		$(".box").css("height", new_box_height); /* assures that each new .box is in fact a perfect square */
  		changeColor();
  	});
 }
